@@ -1,0 +1,78 @@
+{
+    "email":"sofi.sciangu@gmail.com",
+    "password":"portfolio123",
+
+    "subject":{
+        "nombre": "Sofía",
+        "apellido": "Sciangula",
+        "image": "../../../assets/Fotoperfil.jpeg",
+        "position": "Full Stack Developer JR",
+        "ubicacion": "Rosario,Argentina",
+        "company": "INTI",
+        "company_img": "../../../assets/logoAP",
+        "study": "Universidad Tecnológica Nacional",
+        "study_img": "../../../assets/UTN"     
+            },
+
+    "experience":[{
+        "position":"Asesoramiento técnico/ventas en Norces",
+        "company": "Norces",
+        "img":"../../../assets/Norces",
+        "start": "feb 2017",
+        "end":"actualidad",
+        "timeElapsed": "6 años",
+        "type": "Jornada completa",
+        "city": "Rosario, Argentina"
+    },
+    {
+        "position":"Inspectora en el departamento de Fiscalización ambiental",
+        "company": "Municipalidad de Rosario",
+        "img":"../../../assets/Muni",
+        "start": "enero 2014",
+        "end":"enero 2017",
+        "timeElapsed": "3 años",
+        "type": "Jornada completa",
+        "city": "Rosario, Argentina"
+    }
+],
+    
+    "education":[{
+        "school":"UTN FRRo",
+        "title":"Técnica universitaria en química",
+        "carrer":"Ingeniería Química",
+        "start":"2017",
+        "end":"2013",
+        "img":"../../../assets/UTN"
+},   
+                {
+        "school":"UTN FRRo",
+        "title":"Ingeniería Química",
+        "carrer":"Ingeniería Química",
+        "start":"2017",
+        "end":"incompleto",
+        "img":"../../../assets/UTN"},
+        {
+        "school":"EETP N° 432",
+        "title":"Polimodal: Humanidades y ciencias sociales",
+        "start":"2007",
+        "end":"2006",
+        "img":"../../../assets/minist.sta.fe.PNG"}
+             ],
+    "aptitudes": [{
+        "name":"resolucion de problemas"
+    },
+                {
+        "name": "proactividad"
+                },
+                {
+        "name":"optimización de recursos"
+                },
+                {
+        "name":"trabajo en equipo"
+            }        
+    ],
+
+    "archivements": {
+        "name": "Portfolio Web-Argentina Programa 4.0"
+        }
+    }
