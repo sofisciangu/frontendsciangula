@@ -7,7 +7,7 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root'
 })
 export class EducacionService {
-  URL= 'http://localhost:6465/educacion'
+  URL= 'https://portfolio-sciangula.onrender.com/educacion'
   constructor(private httpClient : HttpClient) { }
 
   public lista(): Observable<Educacion[]>{

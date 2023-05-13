@@ -9,7 +9,7 @@ import { LoginUsuario } from '../model/login-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'https://localhost:6465/auth/';
+  authURL = 'https://portfolio-sciangula.onrender.com/auth/';
   constructor(private httpClient: HttpClient) { }
 
   public nuevo(nuevoUsuario: NuevoUsuario): Observable<any>{
