@@ -6,7 +6,7 @@
 }
 #nombre {
     font-weight: bold;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 h1,p{
@@ -21,7 +21,7 @@ h1,p{
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
         left: 3%;
-        top:465px;
+        top: 400px;
     }
 }
 @media (max-width: 575px){
