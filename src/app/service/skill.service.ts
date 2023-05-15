@@ -8,7 +8,7 @@ import { Skill } from '../model/skill';
   providedIn: 'root'
 })
 export class SkillService {
-  hysURL = 'https://portfolio-sciangula.onrender.com/hys'
+  hysURL = 'https://backendsciangula.onrender.com/hys'
   
   constructor(private httpClient: HttpClient) { }
 
