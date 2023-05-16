@@ -7,22 +7,17 @@ import { AcercaDeComponent } from './components/acercade/acercade.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { HomeComponent } from './components/home/home.component';
 import { HysComponent } from './components/hys/hys.component';
-import { LoginComponent } from './components/login/login.component';
 import { LogoAPComponent } from './components/logo-ap/logo-ap.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { interceptorProvider } from './service/interceptor-service';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
-import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
+import { EdicionComponent } from './components/experiencia/edicion.component';
+import { EditExperienciaComponent} from './components/experiencia/edit-experiencia.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { NeweducacionComponent } from './components/educacion/neweducacion.component';
-import { EditeducacionComponent } from './components/educacion/editeducacion.component';
-import { NewhysComponent } from './components/hys/newhys.component';
-import { EdithysComponent } from './components/hys/edithys.component';
+import { ModalComponent } from './components/modal/modal.component';
+
 
 
 @NgModule({
@@ -33,20 +28,14 @@ import { EdithysComponent } from './components/hys/edithys.component';
     EducacionComponent,
     ExperienciaComponent,
     FooterComponent,
-    HomeComponent,
     HysComponent,
-    LoginComponent,
     LogoAPComponent,
     ProyectoComponent,
-    NewExperienciaComponent,
-    EditExperienciaComponent,
     BannerComponent,
-    NewExperienciaComponent,
+    EdicionComponent,
     EditExperienciaComponent,
-    NeweducacionComponent,
-    EditeducacionComponent,
-    NewhysComponent,
-    EdithysComponent,
+    ModalComponent,
+
 
 
 
@@ -59,7 +48,7 @@ import { EdithysComponent } from './components/hys/edithys.component';
     NgCircleProgressModule.forRoot({}),
 
   ],
-  providers: [interceptorProvider],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

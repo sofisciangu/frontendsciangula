@@ -8,34 +8,37 @@ import { SExperienciaService } from 'src/app/service/s-experiencia.service';
   templateUrl: './edit-experiencia.component.html',
   styleUrls: ['./edit-experiencia.component.css']
 })
-export class EditExperienciaComponent implements OnInit {
-  expLab: Experiencia = null;
+export class EditExperienciaComponent implements OnInit{
 
-  constructor(private sExperiencia: SExperienciaService, private activatedRouter: ActivatedRoute,
-    private router: Router) { }
+  nombreE: string;
+  descripcionE: string;
+  expe: Experiencia [] = [];
+
+  constructor(private sExperiencia: SExperienciaService, private router: Router){}
 
   ngOnInit(): void {
-    const id = this.activatedRouter.snapshot.params['id'];
-    this.sExperiencia.detail(id).subscribe(
-      data =>{
-        this.expLab = data;
-      }, err =>{
-        alert("Error al modificar experiencia");
-        this.router.navigate(['']);
-      }
-    )
+    this.cargarExperiencia();
   }
 
-  onUpdate(): void{
-    const id = this.activatedRouter.snapshot.params['id'];
-    this.sExperiencia.update(id, this.expLab).subscribe(
-      data => {
-        this.router.navigate(['']);
-      }, err =>{
-         alert("Error al modificar experiencia");
-         this.router.navigate(['']);
-      }
-    )
+  onCreate(): void{
+    const expe = new Experiencia(this.nombreE, this.descripcionE);
+    this.sExperiencia.save(expe).subscribe(data=>{alert("Experiencia añadida")})
+  }
+
+  cargarExperiencia(): void{
+    this.sExperiencia.lista().subscribe(data => {this.expe = data});
+
+  }
+
+  navigateToEdit(id: number): void {
+    this.router.navigate(['/editexp', id]);
+  }
+
+  borrar(id?: number){
+    if (id != undefined){
+      this.sExperiencia.detele(id).subscribe(data => {alert("Experiencia borrada")})
+    }
+
   }
 
 }

@@ -1,8 +1,12 @@
 div{
-    background-color: #a1b5cb;
+    background-color: black
 }
 
 app-social{
     float: right;
     margin-top: 25px;
+}
+.login{
+    text-align: right;
+    padding: 20px;
 }
